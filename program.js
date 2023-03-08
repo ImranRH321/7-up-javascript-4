@@ -34,11 +34,29 @@ const names =  evenOdd("-2");
 // Third problem -3
 // +++++++++++++++++++++++++++
 function isLGSeven (number) {
-    if(number < 7){
+    
+    if(number <= 7){
       return number - 7
     }else{
         return number * number;
     }
 }
 
-const isNumber =  isLGSeven(15)
+const isNumber =  isLGSeven(6)
+
+// Four problem - 4
+// +++++++++++++++++++++++++++
+function findingBadData(array) {
+    let badData = [];
+    for (const number of array) {
+        if(number < 0){
+            badData.push(number)
+        }
+    }
+    return badData.length;
+}
+
+
+const numberArray = [3,4,5,-77, 0,100 -22, -50,-34, -33]
+const number = findingBadData(numberArray)
+
