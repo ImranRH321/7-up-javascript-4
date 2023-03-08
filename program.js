@@ -1,5 +1,5 @@
 
-// first problem 
+// first problem - 1
 // +++++++++++++++++++++++++++
  function mindGame(number) {
     if(typeof number === "number"&& number >= 0){
@@ -15,10 +15,10 @@
 const gameNumber =  mindGame(50)
 
 
-// Second problem 
+// Second problem - 2
 // +++++++++++++++++++++++++++
 function  evenOdd(string) {
-    if(typeof string === "string"){
+    if(typeof string === "string" && string.length >= 0){
         if(string.trim().length % 2  === 0){
           return "even number";
         }else{
@@ -29,3 +29,16 @@ function  evenOdd(string) {
     }
 }
 const names =  evenOdd("-2");
+
+
+// Third problem -3
+// +++++++++++++++++++++++++++
+function isLGSeven (number) {
+    if(number < 7){
+      return number - 7
+    }else{
+        return number * number;
+    }
+}
+
+const isNumber =  isLGSeven(15)
