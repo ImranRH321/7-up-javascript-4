@@ -14,3 +14,18 @@
  }
 const gameNumber =  mindGame(50)
 
+
+// Second problem 
+// +++++++++++++++++++++++++++
+function  evenOdd(string) {
+    if(typeof string === "string"){
+        if(string.trim().length % 2  === 0){
+          return "even number";
+        }else{
+            return "odd number";
+        }
+    }else{
+        return "Please provide String character  ?"
+    }
+}
+const names =  evenOdd("-2");
